@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Dynamic Resume Builder</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>User Dynamic Resume Builder</h1>
+
+        <form id="resume-form">
+          <section>
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="profile-picture">Profile Picture URL:</label>
+            <input type="url" id="profile-picture" name="profile-picture" required>
+          </section>
+
+          <section>
+            <h2>User Education</h2>
+            <div id="education-container"></div>
+            <button type="button" id="add-education">Add Education</button>
+          </section>
+
+          <section>
+            <h2>User Work Experience</h2>
+            <div id="work-experience-container"></div>
+            <button type="button" id="add-work-experience">Add Work Experience</button>
+          </section>
+
+          <section>
+            <h2>Skills</h2>
+            <input type="text" id="skills" name="skills">
+          </section>
+
+          <button type="submit">Generate User Resume</button>
+        </form>
+
+        <section id="resume-output" style="display: none;">
+          <h2>User Generated Resume</h2>
+          <div id="resume-content"></div>
+        </section>
+
+        <script src="app.js"></script>
+    </body>
+</html>
